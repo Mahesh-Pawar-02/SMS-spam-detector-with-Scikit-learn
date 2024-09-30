@@ -23,7 +23,7 @@ Classifier.fit(vectorize_text, train_data.v1)
 
 @app.route('/', methods=['GET'])
 def index():
-    message = request.args.get('Hi', '')
+    message = request.args.get('message', 'Congratulations! You have won a $1,000 Walmart gift card. Go to http://bit.ly/123456 tp claim now.')
     error = ''
     predict_proba = ''
     predict = ''
